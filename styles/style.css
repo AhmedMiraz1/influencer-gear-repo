@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Inter:wght@200;300;400;500;700;800;900&family=Merriweather:wght@300;400;700;900&family=Open+Sans:ital,wght@0,500;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav > h3 {
+  width: 243px;
+  height: 52.2px;
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 120px;
+  margin-top: 90px;
+}
+
+nav > ul {
+  display: flex;
+  gap: 35px;
+  margin-top: 90px;
+  margin-right: 120px;
+}
+nav li {
+  list-style: none;
+  text-decoration: none;
+  width: 62px;
+  height: 34.8px;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.banner {
+  display: flex;
+  gap: 133px;
+}
+.banner-content h2 {
+  width: 582px;
+  height: 133px;
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner-content p {
+  width: 505px;
+  height: 60.9px;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+.banner-content button {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.banner-content {
+  margin-top: 145px;
+  margin-left: 120px;
+}
+.image {
+  background-image: url("../images/Circle\ design.svg");
+  width: 440px;
+  height: 414px;
+  margin-right: 165px;
+  margin-top: 86px;
+}
+
+
+.sponsor-icon {
+    margin-top: 136px;
+    margin-left: 165px;
+ 
+ 
+}
+.sponsor-icon img {
+    gap: 60px;
+}
