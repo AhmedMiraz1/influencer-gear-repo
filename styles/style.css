@@ -75,6 +75,11 @@ nav li {
   margin-top: 145px;
   margin-left: 120px;
 }
+
+.banner-content >button >img {
+  position: relative;
+  top: 4px;
+}
 .image {
   background-image: url("../images/Circle\ design.svg");
   width: 440px;
@@ -118,17 +123,22 @@ nav li {
   gap: 60px;
 }
 .card {
-  width: 300px;
+  width: 100%;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   padding: 10px;
+  /* border: 1px solid red; */
+
+}
+
+.card img {
+  width: 100%;
 }
 .card-stats {
   color: #18191f;
   font-size: 28px;
   font-weight: 500;
-  line-height: 40px;
 }
 .card-title {
   width: 196px;
@@ -145,20 +155,45 @@ nav li {
   font-weight: 400;
   line-height: 150%;
 }
-.image-container > button {
+
+.card .rating {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.rating .star {
+  display: flex;
+  gap: 2px;
+}
+
+.rating .star * {
+  width: 16px;
+  height: 16px;
+}
+.see-more-button {
   display: flex;
   justify-content: end;
+  width: 100%;
   color: rgba(224, 44, 109, 0.87);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   background: none;
   border: none;
+  margin-top: 30px;
+  align-items: center;
+  gap: 8px;
+}
+.see-more-button img {
+  position: relative;
+  top: 1px;
 }
 /* feature section  */
 .feature-section {
   display: flex;
   width: 1440px;
-  margin-top: 174px ;
+  margin-top: 174px;
   margin-left: auto;
   margin-right: auto;
   gap: 96px;
@@ -193,6 +228,15 @@ nav li {
   font-size: 16px;
   font-weight: 700;
 }
+
+.feature-content button #arrow-forward {
+  fill: white !important;
+}
+.feature-content >button >img {
+  position: relative;
+  top: 4px;
+}
+
 /* footer section  */
 
 .footer-section {
@@ -225,7 +269,7 @@ nav li {
   color: #d9dbe1;
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px; 
+  line-height: 24px;
 }
 .icon {
   display: flex;
@@ -234,4 +278,36 @@ nav li {
   gap: 10px;
   margin-top: 17px;
   margin-bottom: 50px;
+}
+
+.feature-content #arrow-forward {
+  fill: white;
+}
+
+/* responsive query  */
+
+@media screen and (max-width: 576px) {
+  *body {
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .sponsor-icon {
+    flex-direction: column;
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image-container > button {
+    flex-direction: column;
+  }
+  .feature-section{
+    flex-direction: column-reverse;
+  }
 }
